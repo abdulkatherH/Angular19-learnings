@@ -2,9 +2,16 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { NotesComponent } from './notes/notes.component';
 import { TrashComponent } from './trash/trash.component';
+import { InvalidComponent } from '../learning/invalid/invalid.component';
+import { NoteComponent } from './notes/note/note.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
-    { path: 'notes', component: NotesComponent},
-    { path: 'trash', component: TrashComponent}
+    { path: 'notes', component: NotesComponent, children: [
+        { path: 'note', component: NoteComponent },
+        { path: 'note/:name', component: NoteComponent }
+    ]},
+    { path: 'trash', component: TrashComponent},
+    { path: '**', component: InvalidComponent},
+    { path: 'test', redirectTo: 'notes', pathMatch: 'full'}
 ];

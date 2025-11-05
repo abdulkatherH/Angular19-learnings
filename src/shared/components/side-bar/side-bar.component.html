@@ -1,6 +1,9 @@
 <section style="display: flex;">
-    <app-side-bar-item [menuDetails]="routes[0]" style="padding-left: 3cm;"></app-side-bar-item>
+    <!-- <app-side-bar-item [menuDetails]="routes[0]" style="padding-left: 3cm;"></app-side-bar-item>
     <app-side-bar-item [menuDetails]="routes[1]" style="padding-left: 3cm;"></app-side-bar-item>
-    <app-side-bar-item [menuDetails]="routes[2]" style="padding-left: 3cm;"></app-side-bar-item>
+    <app-side-bar-item [menuDetails]="routes[2]" style="padding-left: 3cm;"></app-side-bar-item> -->
+    <app-side-bar-item [route]="{path: ['/'], name: 'Home'}" style="padding-left: 3cm;"></app-side-bar-item>
+    <app-side-bar-item [route]="{path: ['/', 'notes'], name: 'Notes'}" style="padding-left: 3cm;"></app-side-bar-item>
+    <app-side-bar-item [route]="{path: ['/', 'trash'], name: 'Trash'}" style="padding-left: 3cm;"></app-side-bar-item>
 </section>
 

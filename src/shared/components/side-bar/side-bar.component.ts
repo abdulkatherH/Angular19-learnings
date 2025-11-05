@@ -8,10 +8,10 @@ import { SideBarItemComponent } from "./side-bar-item/side-bar-item.component";
   styleUrl: './side-bar.component.css'
 })
 export class SideBarComponent {
-  L_Padding = 'padding-left: 5cm;'
-  routes = [
-    {name: 'HOME', path: '/'},
-    {name: 'NOTES', path: '/notes'},
-    {name: 'TRASH', path: '/trash'}
-  ]
+  // L_Padding = 'padding-left: 5cm;'
+  // routes = [
+  //   {name: 'HOME', path: '/'},
+  //   {name: 'NOTES', path: '/notes'},
+  //   {name: 'TRASH', path: '/trash'}
+  // ]
 }
