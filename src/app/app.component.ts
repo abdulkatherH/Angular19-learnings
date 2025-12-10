@@ -8,7 +8,7 @@ import { LifeCycleHooksComponent } from "../learning/life-cycle-hooks/life-cycle
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, MenuComponent, HeadingComponent, SideBarComponent, LifeCycleHooksComponent],
+  imports: [RouterOutlet, MenuComponent, HeadingComponent, SideBarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -18,6 +18,13 @@ export class AppComponent {
     name: "SHEIK",
     age: 39,
     gender: "Male"
+  }
+  count = 0;
+  increment() {
+    this.count ++;
+  }
+  decrement() {
+    this.count --;
   }
 
   onSuccess($e: User) {
