@@ -15,7 +15,7 @@ import { LifeCycleHooksComponent } from "../learning/life-cycle-hooks/life-cycle
 export class AppComponent {
   heading = 'HEADING VALUE FROM APP COMPONENT!';
   user: User = {
-    name: "Sheik Abdul Kather.H",
+    name: "SHEIK",
     age: 39,
     gender: "Male"
   }
